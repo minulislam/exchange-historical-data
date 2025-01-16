@@ -53,7 +53,7 @@ jobs:
           EXCHANGE: ${{ matrix.exchange }}
           TRADINGMODE: ${{ matrix.tradingmode }}
         run: |
-          docker-compose run --rm download-data
+          docker compose run --rm download-data
 
       - name: Fix File Ownership
         run: |
