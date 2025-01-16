@@ -6,7 +6,8 @@ concurrency: 1
 
 jobs:
   Download-Exchange-Data:
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
+    runs-on: self-hosted
     timeout-minutes: 3000
     strategy:
       fail-fast: false
